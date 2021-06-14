@@ -1,0 +1,71 @@
+.ifaw_accordions {
+  position: relative;
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+}
+
+.ifaw_accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.ifaw_accordion-content {
+  padding-right: 30px;
+}
+
+.ifaw_accordion::after {
+  position: absolute;
+  right: 20px;
+  content: url("data:image/svg+xml;charset=UTF-8, <svg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 4H9V5H0V4Z' fill='black'/><path d='M5 0L5 9H4L4 0H5Z' fill='black'/></svg>");
+}
+
+.ifaw_accordion.active::after {
+  position: absolute;
+  right: 20px;
+  padding-bottom: 9px;
+  content: url("data:image/svg+xml;charset=UTF-8, <svg width='9' height='1' viewBox='0 0 9 1' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H9V1H0V0Z' fill='black'/><path d='M5 0L5 1H4L4 0H5Z' fill='black'/></svg>");
+}
+
+.ifaw_image {
+  margin-right: 24px;
+}
+
+.ifaw_panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.ifaw_button {
+  display: block;
+  border: 1px solid #000000;
+  width: 100%;
+  padding: 14px;
+  margin: 18px 0;
+  text-align: center;
+  font-family: "Graphik", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+a.ifaw_button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
