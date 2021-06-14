@@ -1,1 +1,1 @@
-# ifaw-springboard-accordian
+# ifaw-springboard-accordion
