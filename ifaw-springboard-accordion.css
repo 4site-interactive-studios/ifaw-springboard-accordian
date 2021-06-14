@@ -42,6 +42,12 @@
   margin-right: 24px;
 }
 
+/* Ensures balanced sizing between image and text on small screen devices: https://d.pr/i/9EGrbE */
+/* Padding left on block, Margin right of image, Margin right for open/close icon, Padding right on block */
+.ifaw_accordion .ifaw_image > * {
+  max-width: calc((100vw - 18px - 24px - 30px - 18px) / 3);
+}
+
 .ifaw_accordion .ifaw_accordion-content {
   padding-right: 30px;
 }
