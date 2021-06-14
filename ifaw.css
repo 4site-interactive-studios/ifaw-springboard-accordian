@@ -4,6 +4,14 @@
   border-bottom: 1px solid #DADADA;
 }
 
+.ifaw_accordions .ifaw_panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
 .ifaw_accordion {
   display: flex;
   flex-direction: row;
@@ -15,10 +23,6 @@
   border: none;
   outline: none;
   transition: 0.4s;
-}
-
-.ifaw_accordion-content {
-  padding-right: 30px;
 }
 
 .ifaw_accordion::after {
@@ -34,19 +38,15 @@
   content: url("data:image/svg+xml;charset=UTF-8, <svg width='9' height='1' viewBox='0 0 9 1' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H9V1H0V0Z' fill='black'/><path d='M5 0L5 1H4L4 0H5Z' fill='black'/></svg>");
 }
 
-.ifaw_image {
+.ifaw_accordion .ifaw_image {
   margin-right: 24px;
 }
 
-.ifaw_panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
+.ifaw_accordion .ifaw_accordion-content {
+  padding-right: 30px;
 }
 
-.ifaw_button {
+.ifaw_panel .ifaw_button {
   display: block;
   border: 1px solid #000000;
   width: 100%;
@@ -64,7 +64,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-a.ifaw_button:hover {
+.ifaw_panel a.ifaw_button:hover {
   background-color: #000000;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
